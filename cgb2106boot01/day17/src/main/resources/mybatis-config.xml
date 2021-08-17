@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- mybatis的核心配置文件 -->
+<configuration>
+    <!--配置别名-->
+    <typeAliases>
+        <typeAlias type="cn.tedu.pojo.Dept" alias="Dept"></typeAlias>
+        <typeAlias type="cn.tedu.pojo.User" alias="User"></typeAlias>
+        <typeAlias type="cn.tedu.pojo.Emp" alias="Emp"></typeAlias>
+    </typeAliases>
+
+    <environments default="test">
+        <environment id="test">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatisdb?characterEncoding=utf8&amp;serverTimezone=Asia/Shanghai" />
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--引入映射文件-->
+    <mappers>
+        <mapper resource="UserMapper.xml"></mapper>
+        <mapper resource="DeptMapper.xml"></mapper>
+        <mapper resource="EmpMapper.xml"></mapper>
+    </mappers>
+</configuration>

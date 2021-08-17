@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.dao.DeptMapper">
+    <sql id="cols">
+        id,dname,loc
+    </sql>
+    <select id="getById" resultType="Dept">
+        select * from dept where id=#{id}
+    </select>
+    <select id="getByName" resultType="Dept">
+        select
+         <include refid="cols"></include>
+         from dept
+         <if test="dname!=null">
+             where dname=#{dname}
+         </if>
+    </select>
+    <insert id="save">
+        insert into dept values (#{id},#{dname},#{loc})
+    </insert>
+</mapper>
