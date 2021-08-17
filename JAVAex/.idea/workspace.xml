@@ -14,7 +14,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1upr8If4oMoxX6nANWdr3voDFzu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,6 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.TestOut">
     <configuration name="TestBigDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -118,6 +123,7 @@
       <workItem from="1626502867351" duration="7247000" />
       <workItem from="1626586344109" duration="1616000" />
       <workItem from="1627723764133" duration="104000" />
+      <workItem from="1629205487399" duration="15000" />
     </task>
     <servers />
   </component>
