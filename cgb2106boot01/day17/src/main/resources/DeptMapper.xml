@@ -20,4 +20,11 @@
     <insert id="save">
         insert into dept values (#{id},#{dname},#{loc})
     </insert>
+    <delete id="deleteById">
+        delete from dept where id in(
+            <foreach collection="array" item="ids" separator=",">
+                #{ids}
+            </foreach>
+            )
+    </delete>
 </mapper>

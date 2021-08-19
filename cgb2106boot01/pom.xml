@@ -11,6 +11,8 @@
         <module>day16</module>
         <module>day1602</module>
         <module>day17</module>
+        <module>day19</module>
+        <module>SSM01</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

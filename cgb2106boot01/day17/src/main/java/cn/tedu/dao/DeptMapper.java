@@ -8,4 +8,5 @@ public interface DeptMapper {
     Dept getById(Integer id);
     List<Dept> getByName(String dname);
     void save(Dept dept);
+    void deleteById(int[] arr);
 }

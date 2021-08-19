@@ -72,9 +72,12 @@ public class Test1 {
             System.out.println(a);
         }
 
-        Dept dept = new Dept(7,"roce","六区");
+        Dept dept = new Dept(101,"roce","六区");
         //dept.setId(6).setDname("jack").setLoc("五区");
         mapper.save(dept);
+        session.commit();
+
+        mapper.deleteById(new int[]{1,2,3});
         session.commit();
     }
 }
